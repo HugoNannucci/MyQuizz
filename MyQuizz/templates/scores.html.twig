@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<h1>Vos scores :</h1>
+
+<ul>
+    {% for key,categorie in categories %}
+        {% if scores[key] != 'N/A' %}
+        <li>Quizz {{ categorie|e }} : {{scores[key]}} sur {{max[key]}}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
+<a href='/' class="boutons_grey">Retour aux quizz</a>
+<a href='/user/profile' class="boutons_grey">Retour à mon compte</a>
+{% endblock %}

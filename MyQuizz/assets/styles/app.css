@@ -1,0 +1,112 @@
+#last_logged_input {
+    display: none;
+}
+.lien_form{
+    color: black;
+}
+.titre_form {
+    margin-left: 20px;
+}
+.titre_form:hover {
+    color: blue;
+}
+.container_lien_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.table {
+    margin: auto;
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+.table caption {
+    caption-side: top;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.table thead, .table tfoot {
+    background-color: rgb(228 240 245);
+}
+.table th, .table td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+}
+.table td:last-of-type {
+    text-align: center;
+}
+.table tbody > tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+}
+.table tfoot th {
+    text-align: right;
+}
+.table tfoot td {
+    font-weight: bold;
+}
+
+.boutons_black {
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.boutons_green {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.boutons_blue {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.boutons_red {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.boutons_grey {
+    background-color: #e7e7e7;
+    border: none;
+    color: black;
+    border-radius: 4px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}

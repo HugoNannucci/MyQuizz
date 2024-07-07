@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    {# if logged == true <a>Mon compte</a> else V #}
+    <div style="display: flex">
+        {% if app.user %}
+            <a href='/user/profile' class="boutons_black">Mon compte</a>
+        {% else %}
+            <a href='/login' class="boutons_black">Se connecter</a>
+            <a href='/register' class="boutons_black" style="margin-left: 10px">S'inscrire</a>
+        {% endif %}
+        <a href='/scores' class="boutons_grey" style="margin-left: 10px">Vos scores</a>
+    </div>
+    <ul>
+        {% for key,categorie in categories %}
+            <li><a href='/game/{{ key + 1 }}'>Quizz {{ categorie|e }}</a></li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

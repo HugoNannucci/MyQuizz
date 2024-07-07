@@ -1,0 +1,17 @@
+{% extends 'game.html.twig' %}
+{% block body %}
+	<a href="/" class="boutons_grey">Accueil</a>
+	<h1>Quizz {{categorie}}</h1>
+	<h2>Score : {{score}}/{{max}}</h2>
+	<h3>Question : {{question}}</h3>
+	<p>Votre réponse: {{answer}}
+	<br>
+	<p>La bonne réponse: {{goodanswer}}
+	<br>
+	{% if answer == goodanswer %}
+		<p>Bravo!</p>
+	{% else %}
+		<p>Dommage</p>
+	{% endif %}
+    <a href='/game/{{id}}/{{nb + 1}}'>Suivant</a>
+{% endblock %}

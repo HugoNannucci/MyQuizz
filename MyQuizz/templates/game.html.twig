@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+	<a href="/" class="boutons_grey">Accueil</a>
+	<h1>Quizz
+		{{categorie}}</h1>
+
+	{% if question is not empty %}
+		<h2>Question n°{{nb}}:
+			{{question}}</h2>
+	{% else %}
+		<h2><a href='/game/{{id}}/{{nb + 1}}'>Start Quizz</a></h2>
+
+	{% endif %}
+
+{% if form is not empty %}
+
+{{form_start(form)}}
+{{form_row(form.answer)}}
+{{form_row(form.save)}}
+{{form_end(form)}}
+
+{% endif %}
+
+{% endblock %}

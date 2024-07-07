@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{%  block body %}
+
+<span>Merci de confirmer votre e-mail avant de continuer ! Ce dernier est disponible pendant 1 heure.</span><br>
+<span>Cliquez ici pour en envoyer un nouveau :</span><br>
+<a href="http://localhost:8000/resend/email" class="boutons_black">Renvoyer</a>
+    <a href="/" class="boutons_grey">Accueil</a>
+    <a href="/logout" class="boutons_red">Déconnexion</a>
+
+{% endblock %}
